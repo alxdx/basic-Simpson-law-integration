@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Integral</title>
+    <script src="scripts/trapecio.js"></script>
+  </head>
+  <body>
+  	<h3 align = "center">Integracion con regla del trapecio y regla de simpson </h3>
+    <img src="formula.png" align="left">
+    <br>
+    <p>Resultado Trapecio <input id="resT" readonly="readonly"/>   Resultado Simpson <input id="resS" readonly="readonly"/> <p/>
+   	<br>
+   	<br>
+    <br>
+    <br>
+   	<br>
+    <br>
+    <label> Limite Inferior: <input type="number" name="limiteInf" id="a" /></label>
+    <br>
+    <br>
+    <label> Limite Superior: <input type="number" name="limiteSup" id="b"/></label>
+    <br>
+    <br>
+   	<label> No. de Particiones: <input type="number" name="particiones" step="2" placeholder="solo pares" id="n"/></label>
+   	<button onclick="return trapecio();">integrar</button>
+  </body>
+</html>
